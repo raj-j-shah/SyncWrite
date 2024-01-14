@@ -20,7 +20,6 @@ const TOOLBAR_OPTIONS = [
 function TextEditor() {
     const [socket,setSocket] = useState();
     const [quill,setquill] = useState();
-    const [token,setToken] = useState();
     const editorWrapper = useRef(null);
     const {id:documentId} = useParams();
     console.log(documentId);
