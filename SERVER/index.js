@@ -15,7 +15,7 @@ mongoose.connect("mongodb+srv://raj:"+pwd+"@cluster0.wtliayy.mongodb.net/",{
     console.log("db connected!")
   })
 
-const io = require('socket.io')(4000,{
+const io = require('socket.io')(process.env.PORT,{
     cors:{
         origin:'*',
         method: ['GET','POST'],
