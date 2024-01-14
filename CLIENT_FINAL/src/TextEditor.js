@@ -24,7 +24,7 @@ function TextEditor() {
     const {id:documentId} = useParams();
     console.log(documentId);
     useEffect(()=>{
-        const s = io("http://localhost:4000")
+        const s = io("https://syncwrite-backend.onrender.com")
        setSocket(s);
        return ()=>{
         s.disconnect();
